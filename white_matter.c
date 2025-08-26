@@ -231,14 +231,14 @@ int try_connection(const char *host, int port, const char *username, const char 
 
     rc = ssh_userauth_password(session, NULL, password);
     if (rc == SSH_AUTH_SUCCESS) {
-        printf("✅ SUCCESS! Authentication successful with password: %s\n", password);
+        printf("SUCCESS! Authentication successful with password: %s\n", password);
         connected = 1;
     } else if (rc == SSH_AUTH_DENIED) {
-        printf("❌ Authentication denied for password: %s\n", password);
+        printf("Authentication denied for password: %s\n", password);
     } else if (rc == SSH_AUTH_PARTIAL) {
-        printf("⚠️  Partial authentication for password: %s\n", password);
+        printf("Partial authentication for password: %s\n", password);
     } else {
-        printf("❌ Authentication error for password: %s: %s\n", password, ssh_get_error(session));
+        printf("Authentication error for password: %s: %s\n", password, ssh_get_error(session));
     }
 
     ssh_disconnect(session);
