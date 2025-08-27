@@ -306,10 +306,29 @@ gcc -o white_matter white_matter -lssh -lcrypto -lm -lpthread
 
 ## File Structure
 
-ssh_tool
-├── Core SSH Functions
-├── RSA Encryption Engine
-├── Keylogger System
-├── Rootkit Framework
-├── VIM Exploit Module
-└── Utility Functions
+```mermaid
+flowchart TD
+    subgraph Main[White Matter Architecture]
+        direction TB
+        
+        A[Core SSH Functions]
+        style A fill:#2c3e50,stroke:#34495e,color:white
+        
+        B[RSA Encryption Engine]
+        style B fill:#34495e,stroke:#2c3e50,color:white
+        
+        C[Keylogger System]
+        style C fill:#7f8c8d,stroke:#95a5a6,color:white
+        
+        D[Rootkit Framework]
+        style D fill:#95a5a6,stroke:#7f8c8d,color:white
+        
+        E[VIM Exploit Module]
+        style E fill:#bdc3c7,stroke:#ecf0f1,color:#2c3e50
+        
+        F[Utility Functions]
+        style F fill:#d7dbdd,stroke:#ecf0f1,color:#2c3e50
+    end
+
+    style Main fill:none,stroke:#666,stroke-width:2px
+```
