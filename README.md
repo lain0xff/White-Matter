@@ -1,4 +1,9 @@
-# White Matter SSH Rootkit Tool
+# White Matter. Vol 1. You Are (Not) Alone
+
+![Image alt](https://github.com/lain0xff/White-Matter/blob/main/white_matter.png)
+
+## author: yuumitaka
+## tg: https://t.me/reverse_domain
 
 ## Overview
 
